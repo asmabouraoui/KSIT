@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>King Sejong Institute Tunis (튀니스 세종학당)</title>
+    <link rel="icon" href="Images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@100;200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="home.html"><img src="Images/college_logo.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="courses.html">COURSES</a></li>
+  
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Our Courses</h1>
+    </section>
+
+    <!-- ------------courses------------- -->
+
+    <section class="course">
+      <h1>Course We Offer</h1>
+      <div class="course-intro">
+          <p>Dive into our Korean language and cultural classes...</p>
+      </div>
+      <div class="row">
+          <div class="course-col">
+              <img src="Images/1.jpg" alt="B.TECH Program" style="width:100%; height:auto;">
+              <a href="javascript:void(0);" class="hero1-btn" onclick="openModal()">Join Now</a>
+          </div>
+          <div class="course-col">
+              <img src="Images/3.jpg" alt="BCA Program" style="width:100%; height:auto;">
+          </div>
+          <div class="course-col">
+              <img src="Images/2.jpg" alt="B.Sc IT Program" style="width:100%; height:auto;">
+              <a href="javascript:void(0);" class="hero1-btn" onclick="openModal1()">Join Now</a>
+          </div>
+      </div>
+  </section>
+
+  <!-- Admission Modal -->
+  <div id="admissionModal" class="modal">
+      <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <div class="title">
+              <p>Admission Form</p>
+          </div>
+          <div class="container">
+            <form method="post" action="" name="contact-form">
+              <h4>Contact Us</h4>
+              <input type="email" name="your-email" placeholder="Email">
+              <label for="course">Course</label>
+						<div class="input_item">
+							<i class="fa fa-caret-square-o-down" aria-hidden="true"id="icon" ></i>
+					<select id="course" name="course" class="input" required>
+					<option value="select"> Select the Course</option>
+					<option value="bca"> 1A : MON&WED 4-6PM</option>
+					<option value="bscit">1A : TUE&FRI 6:30-8:30PM</option>
+					<option value="bscca&it">1B : MON&THU 4:30-6:30PM</option>
+          <option value="bscca&it">1B : MON&THU 6:30-8:30PM</option>
+          <option value="bscca&it">2A : TUE&FRI 6:30-8:30PM</option>
+          <option value="bscca&it">2B : WED 5:30-7:30PM & FRI 4:30-6:30PM</option>
+          <option value="bscca&it">3A : MON&THU 6:30-8:30PM</option>
+					</select>
+					</div>
+          
+          <label for="file">Attach your level test result PDF(required1B or higher level)</label>
+          <div class="input_item">
+            <i class="fa fa-file" id="icon"></i>
+            <input type="file" name="file" class="input" id="file" required>
+          </div>
+
+
+              <input type="text" name="Full-name-Arabic" placeholder="Full Name (in Arabic)">
+              <input type="text" name="Full-name-English" placeholder="Full Name (in Arabic)">
+              <input type="text" name="Full-name-Korean" placeholder="Full Name (in Arabic)">
+             
+              <label for="Nationality">Nationality:</label>
+              <select id="Nationality" name="Nationality" required>
+                  <option value="" disabled selected>Select your nationality</option>
+                  <option value="american">American</option>
+                  <option value="canadian">Canadian</option>
+                  <option value="french">French</option>
+                  <option value="german">German</option>
+                  <option value="italian">Italian</option>
+                  <option value="japanese">Japanese</option>
+                  <option value="mexican">Mexican</option>
+                  <option value="spanish">Spanish</option>
+                  <option value="other">Other</option>
+              </select><br><br>      
+
+              <label for="dob">Date Of Birth</label>
+              <div class="input_item">
+                <i class="fa fa-calendar" id="icon"></i>
+                <input type="date" name="dob" class="input" id="dob" required>
+              </div>
+              
+              <input type="text" name="Phone" placeholder="Number">
+            
+              <div class="input_item">
+                <i class="fa fa-caret-square-o-down" aria-hidden="true"id="icon" ></i>
+            <select id="How" name="How" class="input" required>
+            <option value="select"> How did you hear about us  ?</option>
+            <option value="bca"> KSIT student</option>
+            <option value="bscit">Facebook</option>
+            <option value="bscca&it">Instagram</option>
+            <option value="bscca&it">CCAB</option>
+            <option value="bscca&it">Friends&Family</option>
+            <option value="bscca&it">South Korea Embassy</option>
+            <option value="bscca&it">Media</option>
+            <option value="bscca&it">Other</option>
+          </select>
+            </div>
+
+              <input type="submit" value="Submit" id="submit">
+            </form>
+          </div>
+        
+          <script src="Google Sheet.js"></script>
+      </div>
+  </div>
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+      function sendmail() {
+          Email.send({
+              // Your email configuration goes here
+          }).then(message => alert("Thanks for filling out our form!"));
+      }
+
+      // Function to open the modal
+      function openModal() {
+          document.getElementById("admissionModal").style.display = "block";
+      }
+
+      // Function to close the modal
+      function closeModal() {
+          document.getElementById("admissionModal").style.display = "none";
+      }
+
+      // Close modal when clicking outside of it
+      window.onclick = function(event) {
+          const modal = document.getElementById("admissionModal");
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      };
+  </script>
+
+  <style>
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(255, 255, 255, 0.711); /* Black with opacity */
+}
+
+/* =================== Modal Content Styles =================== */
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 40px; /* Padding inside the modal */
+    color: rgb(0, 0, 0); /* Text color */
+    background: rgba(255, 204, 204, 0.8); /* Modal background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 
+        0 0.4px 0.4px rgba(205, 205, 205, 0.86),
+        0 1px 1px rgba(205, 205, 205, 0.86),
+        0 2.1px 2.1px rgba(205, 205, 205, 0.86),
+        0 4.4px 4.4px rgba(205, 205, 205, 0.86),
+        0 12px 12px rgba(205, 205, 205, 0.86); /* Shadow effect */
+    width: 400px; /* Fixed width for modal */
+    margin: 15% auto; /* Center modal vertically */
+}
+
+/* =================== Heading Styles =================== */
+h1 {
+    margin: 0 0 24px 0; /* Margin for the heading */
+}
+
+/* =================== Form Input Styles =================== */
+.form-input-material {
+    --input-default-border-color: rgb(0, 0, 0); /* Input default border color */
+    --input-border-bottom-color: rgb(0, 0, 0); /* Input bottom border color */
+    margin: 12px 0; /* Margin for form inputs */
+}
+
+.form-input-material input {
+    color: rgb(0, 0, 0); /* Text color for inputs */
+    background: transparent; /* Transparent background for inputs */
+    border: none; /* No border */
+    border-bottom: 1px solid var(--input-border-bottom-color); /* Bottom border */
+    padding: 8px; /* Padding inside inputs */
+    transition: border-color 0.3s; /* Transition for border color */
+}
+
+.form-input-material input:focus {
+    border-color: rgb(0, 0, 0); /* Change border color on focus */
+}
+
+/* =================== Button Styles =================== */
+.btn {
+    padding: 8px 20px; /* Button padding */
+    border-radius: 0; /* No border radius */
+    overflow: hidden;
+    width: 100%; /* Full width for button */
+    margin: 18px 0 9px 0; /* Margins for button */
+    position: relative; /* Positioning for the pseudo-element */
+
+    &::before {
+        position: absolute; /* Absolute positioning for gradient */
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            120deg,
+            transparent,
+            var(--primary-color),
+            transparent
+        ); /* Gradient background */
+        transform: translateX(-100%); /* Initial position */
+        transition: 0.6s; /* Transition for gradient movement */
+    }
+
+    &:hover {
+        background: transparent; /* Transparent background on hover */
+        box-shadow: 0 0 20px 10px hsla(204, 70%, 53%, 0.5); /* Shadow effect on hover */
+
+        &::before {
+            transform: translateX(100%); /* Move gradient on hover */
+        }
+    }
+}
+
+/* =================== Responsive Design =================== */
+@media (max-width: 425px) {
+    .modal-content {
+        width: 90%; /* Full width for smaller screens */
+        margin: 10% auto; /* Center modal */
+    }
+}
+
+  </style>
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!--
+
+
+
+  <div id="culturalModal" class="modal1">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal1()">&times;</span>
+        <div class="title">
+            <p>Korean Culture Course</p>
+        </div>
+        <div class="container">
+          <form method="post" action="" name="contact-form">
+            <input type="email" name="your-email" placeholder="Email">
+            <label for="course">Course</label>
+          <div class="input_item">
+            <i class="fa fa-caret-square-o-down" aria-hidden="true"id="icon" ></i>
+        <select id="course" name="course" class="input" required>
+        <option value="select"> Select the Course</option>
+        <option value="bca">I would like to take Cooking class next semester</option>
+        <option value="bscit">Doll’s Hanbok Making Class</option>
+        <option value="bscca&it">K-POP Dance Class(5-7pm)</option>
+        <option value="bscca&it">I would like to take Hand Craft Class next semester</option>
+        </select>
+        </div>
+
+            <input type="text" name="Full-name-Arabic" placeholder="Full Name (in Arabic)">
+            <input type="text" name="Full-name-English" placeholder="Full Name (in Arabic)">
+            <input type="text" name="Full-name-Korean" placeholder="Full Name (in Arabic)">  
+
+            <label for="dob">Date Of Birth</label>
+            <div class="input_item">
+              <i class="fa fa-calendar" id="icon"></i>
+              <input type="date" name="dob" class="input" id="dob" required>
+            </div>
+            
+            <input type="text" name="Phone" placeholder="Number">
+          
+
+            <input type="submit" value="Submit" id="submit">
+          </form>
+        </div>
+      
+        <script src="Google Sheet.js"></script>
+    </div>
+</div>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendmail() {
+        Email.send({
+            // Your email configuration goes here
+        }).then(message => alert("Thanks for filling out our form!"));
+    }
+
+    // Function to open the modal
+    function openModal1() {
+        document.getElementById("culturalModal").style.display = "block";
+    }
+
+    // Function to close the modal
+    function closeModal1() {
+        document.getElementById("culturalModal").style.display = "none";
+    }
+
+    // Close modal when clicking outside of it
+    window.onclick = function(event) {
+        const modal1 = document.getElementById("culturalModal");
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    };
+</script>
+</body>
+</html>
+
+-->
+
+
+
+    <!-- --------------facilities---------------- -->
+
+    <section class="facilities">
+      <h1>Experience Korean Culture</h1>
+      <div class="facilities-intro">
+        <p>
+          Immerse yourself in rich cultural experiences, blending tradition, flavor, and vibrant events that bring Korea closer to you.
+        </p>
+      </div>
+      <div class="row">
+        <div class="facilities-col">
+          <img src="Images/facilities1.jpg" alt="" />
+          <h3>Korean food</h3>
+          <p>
+            Embark on a delicious journey through authentic Korean cuisine, where every bite offers a taste of tradition and culture.
+          </p>
+        </div>
+        <div class="facilities-col">
+          <img src="Images/facilities2.jpg" alt="" />
+          <h3>Hanbok tryouts</h3>
+          <p>
+            Step into the beauty of tradition with our hanbok tryouts, allowing you to wear and celebrate this iconic Korean attire while immersing yourself in cultural heritage.
+          </p>
+        </div>
+
+        <div class="facilities-col">
+          <img src="Images/facilities3.jpg" alt="" />
+          <h3>Embassy events</h3>
+          <p>
+            Engage in enriching embassy events that offer a unique glimpse into Korean culture, fostering connections and understanding through cultural exchanges and celebrations.
+          </p>
+        </div>
+      </div>
+    </section>
+
+     <!-- ----------footer---------------- -->
+
+     <section class="footer">
+      <h1>About Us</h1>
+      <div class="footer-intro">
+        <p>
+          "I am a passionate developer dedicated to crafting innovative
+          solutions that merge technology with creativity. <br />Our mission is
+          to build seamless experiences that redefine possibilities."
+        </p>
+      </div>
+      <div class="icons">
+        <a
+          href="https://www.facebook.com/KSI.Tunis"
+          class="fa fa-facebook"
+        ></a>
+        <a
+          href="https://www.instagram.com/ksi_tunis/?hl=en"
+          class="fa fa-instagram"
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/asma-bouraoui-business-intelligence-engineer/"
+          class="fa fa-linkedin"
+        ></a>
+      </div>
+      <p>Made with <i class="fa fa-heart-o"></i> by AB</p>
+      <p>© 2024 KSIT</p>
+    </section>
+
+    <!--Javascript for Toggle Menu-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
